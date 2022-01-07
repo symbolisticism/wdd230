@@ -1,0 +1,48 @@
+body {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+* {
+  grid-column: 2;
+  font-family: monospace;
+}
+
+header {
+  background-color: rgb(81, 85, 23);
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: rgb(81, 85, 23);
+  color: #fff;
+}
+
+header, footer {
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header, footer, img {
+  border-radius: 25px;
+}
+
+ul, h2 {
+  text-align: left;
+}
+
+h1 {
+  grid-column: 2 / 4;
+  padding: 1rem;
+}
+
+img {
+  grid-column: 1;
+  padding: 1rem;
+}
+
