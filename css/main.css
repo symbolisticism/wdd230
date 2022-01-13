@@ -33,10 +33,6 @@ header, footer, img {
   border-radius: 25px;
 }
 
-ul, h2 {
-  text-align: left;
-}
-
 h1 {
   grid-column: 2 / 4;
   padding: 1rem;
