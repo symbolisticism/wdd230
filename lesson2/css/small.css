@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+}
+
+header,
+footer {
+  background-color: #102B3F;
+  color: #fff; 
+  text-align: center;
+  padding: 1em;
+}
+
+h3 {
+  background-color: #464F51;
+  color: #fff;
+  border-radius: 25px 25px 0 0;
+  padding: 1rem;
+}
+
+section {
+  background-color: #ECE8EF;
+  padding: 1rem;
+}
+
+div {
+  margin: 1rem 0 1rem 0;
+}
+
+p, 
+h3, 
+h4 {
+  font-family: 'Josefin Slab', serif;
+}
+
+h1, 
+h2 {
+  font-family: 'PT Mono', monospace;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  padding: 1rem 0 1rem 0;
+}
