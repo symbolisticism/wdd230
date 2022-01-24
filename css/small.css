@@ -7,14 +7,11 @@ body {
   box-sizing: border-box;
 }
 
-header {
-  background-color: rgb(81, 85, 23);
+header, 
+footer {
+  background-color: #102B3F;
   color: #fff;
 }
-
-footer {
-  background-color: rgb(81, 85, 23);
-  color: #fff;
 }
 
 h1 {

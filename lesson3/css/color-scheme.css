@@ -1,0 +1,154 @@
+/*************************************************************************
+* SMALL VIEW
+**************************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header, 
+footer {
+  background-color: #502419;
+  color: #fff;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+nav {
+  background-color: #e1ca96;
+  margin-top: 1rem;
+}
+
+h3 {
+  color: #000000;
+  margin-top: 1rem;
+}
+
+p, 
+h1, 
+h3 {
+  padding: 0.75rem;
+}
+
+main p {
+  background-color: #58574b;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+
+}
+
+main img {
+  margin-top: 1rem;
+}
+
+header img {
+  padding: 0.75rem;
+}
+
+li {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.25rem;
+}
+
+a:visited, 
+a:link {
+  text-decoration: none;
+  color: #3c413e;
+}
+
+a:active, 
+a:hover {
+  color: #fff;
+}
+
+#color1 {
+  background-color: #502419;
+  color: #502419;
+}
+
+#color2 {
+  background-color: #d45113;
+  color: #d45113;
+}
+
+#color3 {
+  background-color: #e1ca96;
+  color: #e1ca96;
+}
+
+#color4 {
+  background-color: #aca885;
+  color: #aca885;
+}
+
+#color5 {
+  background-color: #626c66;
+  color: #626c66;
+}
+
+div {
+  margin: 1em;
+  min-height: 30vh;
+}
+
+/*************************************************************************
+* MEDIUM VIEW 
+**************************************************************************/
+@media only screen and (min-width: 32.5em) {
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  li {
+    list-style-type: none;
+  }
+  
+  nav {
+    min-width: 95vw;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0px 5px 10px gray, 
+        -5px 5px 10px gray, 5px 5px 10px gray;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  body {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    margin-top:auto
+  }
+
+  h2 {
+    margin-top: 1rem;
+    background-color: #626c66;
+    min-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+}
