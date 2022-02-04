@@ -4,11 +4,16 @@
 
   nav ul#primaryNav { 
     display: flex; 
-    border-left: 1px solid rgba(0,0,0,0.3);
   }
 
   nav ul li a {
     padding: .5rem 1rem;
   } 
+
+  nav ul {
+    position: static;
+  }
+
+  
 
 }
