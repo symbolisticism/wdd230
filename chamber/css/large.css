@@ -89,6 +89,16 @@
     display: block;
   }
 
+  main .overlay {
+    background-color: #d45113;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.75rem 2rem;
+    display: block;
+    text-decoration: none;
+  }
+
   /* F O O T E R */
   footer {
     padding: 0;
@@ -101,6 +111,14 @@
 
   footer div.moreinfo span#lastmod {
     display: inline;
+  }
+
+  footer .project {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  footer #lastmod {
+    padding: 0 0.5rem;
   }
 
 }

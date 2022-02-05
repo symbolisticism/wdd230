@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 /* H E A D E R */
@@ -132,19 +133,19 @@ footer .moreinfo {
 /* B O D Y */
 
 main .size1 {
-  background-color: #999;
-  height: 6rem;
+  background-color: #626c66;
   margin: 0.5rem 0;
-  border: 1px solid rgba(0,0,0,0.3);
+  /* border: 1px solid rgba(0,0,0,0.3); */
+  border-radius: 5px 5px 5px 5px;
   padding: 0.5rem;
 }
 
 main .size2 {
-  background-color: #999;
+  background-color: #626c66;
   display: flex;
   flex-direction: column;
   margin: 0.5rem 0 1rem 0;
-  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 5px 5px 5px 5px;
 }
 
 main .spotlight {
@@ -163,4 +164,29 @@ main .hero {
 
 main .splt3 {
   display: none;
+}
+
+main .event {
+  background-color: #626c66;
+
+}
+
+main img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+main .hero-sec {
+  position: relative;
+  overflow: hidden;
+}
+
+main .overlay {
+  background-color: #d45113;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.75rem 2rem;
+  display: block;
+  text-decoration: none;
 }
