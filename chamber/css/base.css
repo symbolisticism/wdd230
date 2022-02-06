@@ -45,7 +45,7 @@ header div img#logo {
 
 header div.medialinks {
   font-size: 2rem;
-  
+
 }
 
 a:visited {
@@ -195,6 +195,11 @@ main .overlay {
   text-decoration: none;
   border-radius: 5px 5px 5px 5px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5), -5px -5px 5px rgba(0,0,0,0.5);
+}
+
+main .overlay, 
+main .join-div {
+  color: black;
 }
 
 div.chamber-meeting {
