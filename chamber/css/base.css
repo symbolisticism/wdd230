@@ -55,9 +55,11 @@ a:visited {
 nav ul {
   list-style-type: none;
   position: absolute;
+  z-index: 1;
   top: 80px;
-  right: 30px;
-  background-color: rgba(255, 255, 255, 0.9);
+  right: 0px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 nav button {
