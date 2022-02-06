@@ -1,4 +1,4 @@
-@media only screen and (min-width: 76rem) {
+@media only screen and (min-width: 75rem) {
 
   /* N A V I G A T I O N */
   nav button { display: none; }
@@ -141,6 +141,11 @@
 
   footer #lastmod {
     padding: 0 0.5rem;
+  }
+
+  /* H E A D E R */
+  .fab {
+    margin: 1rem 2rem;
   }
 
 }
