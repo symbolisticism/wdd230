@@ -195,3 +195,11 @@ main .overlay {
   border-radius: 5px 5px 5px 5px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5), -5px -5px 5px rgba(0,0,0,0.5);
 }
+
+div.chamber-meeting {
+  background-color: #d45113;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 2.5rem;
+  padding: 1rem;
+}

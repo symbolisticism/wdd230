@@ -23,3 +23,11 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 );
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
+
+// script for banner that invites people to the chamber meeting
+window.onload = function () {
+  if (d.getDay() == 'Saturday' || d.getDay() == 'Tuesday')
+    document.getElementById('chamber-meeting').style.display = 'block';
+  else
+    document.getElementById('chamber-meeting').style.display = 'none';
+}
