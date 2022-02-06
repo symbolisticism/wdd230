@@ -26,7 +26,7 @@ datefield.innerHTML = `<em>${fulldate}</em>`;
 
 // script for banner that invites people to the chamber meeting
 window.onload = function () {
-  if (d.getDay() == 'Saturday' || d.getDay() == 'Tuesday')
+  if (d.getDay() == 'Monday' || d.getDay() == 'Tuesday')
     document.getElementById('chamber-meeting').style.display = 'block';
   else
     document.getElementById('chamber-meeting').style.display = 'none';
