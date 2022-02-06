@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 76rem) {
 
   /* N A V I G A T I O N */
   nav button { display: none; }
@@ -38,11 +38,16 @@
     height: 560px;
   }
 
+  main .size1 {
+    border-radius: 5px 5px 5px 5px;
+  }
+
   main .size2 {
     flex-direction: column;
     width: auto;
     grid-row: 1 / 4;
     grid-column: 4;
+    border-radius: 5px 5px 5px 5px;
     margin: 0.5rem;
   }
 
@@ -100,6 +105,10 @@
     padding: 0.75rem 2rem;
     display: block;
     text-decoration: none;
+  }
+
+  main .hero-sec {
+    border-radius: 5px 5px 5px 5px;
   }
 
   div#chamber-meeting {
