@@ -28,10 +28,25 @@
     margin-bottom: 1rem;
   }
 
+  div.join-div {
+    background-color: #d45113;
+    padding: 0.5rem;
+    text-align: center;
+    width: 80%;
+    margin: 0.5rem auto;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5), -5px -5px 15px rgba(0,0,0,0.5);
+  }
+
+  a.join-link {
+    text-decoration: none;
+  }
+
   main {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 2fr 1fr;
+    text-align: center;
   }
 
   main .size2 {

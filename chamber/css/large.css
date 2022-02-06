@@ -29,6 +29,8 @@
   main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
+    max-width: 90vw;
+    margin: 0 auto;
   }
 
   main {

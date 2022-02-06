@@ -159,7 +159,8 @@ main .join {
 }
 
 main .hero {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 main .splt3 {
@@ -173,12 +174,12 @@ main .event {
 
 main img {
   max-width: 100%;
-  margin: 0 auto;
 }
 
 main .hero-sec {
   position: relative;
   overflow: hidden;
+  border-radius: 5px 5px 5px 5px;
 }
 
 main .overlay {
@@ -189,4 +190,6 @@ main .overlay {
   padding: 0.75rem 2rem;
   display: block;
   text-decoration: none;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5), -5px -5px 5px rgba(0,0,0,0.5);
 }
