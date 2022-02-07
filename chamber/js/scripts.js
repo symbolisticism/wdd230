@@ -29,7 +29,7 @@ window.onload = function() {
 
   const banner = document.getElementById('chamber-meeting')
 
-  if (d.getDay() == 'Monday' || d.getDay() == 'Tuesday')
+  if (d.getDay() == 1 || d.getDay() == 2)
     banner.style.display = 'block';
   else if (d.getDay() != 'Monday' && d.getDay() != 'Tuesday')
     banner.style.display = 'none';
