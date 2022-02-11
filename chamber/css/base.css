@@ -209,3 +209,10 @@ div.chamber-meeting {
   font-size: 2.5rem;
   padding: 1rem;
 }
+
+/* C L E A R  F I X */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
