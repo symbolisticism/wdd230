@@ -32,7 +32,7 @@
           ><picture>
             <img
               id="logo"
-              src="images/logo/hcoc-logo-svg.svg"
+              src="images/logo/hcoc-logo-wp.webp"
               alt="HCOC logo"
             /> </picture
         ></a>
@@ -67,18 +67,32 @@
     </div>
     <main>
       <div class="hero-sec hero">
-        <picture
-          ><img
+        <picture>
+          <source
+            media="(max-width: 200px)"
+            srcset="images/hero-image/wdd230wp-200.webp 200w"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 500px)"
+            srcset="images/hero-image/wdd230wp-500.webp 500w"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 800px)"
+            srcset="images/hero-image/wdd230wp-800.webp 800w"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1200px)"
+            srcset="images/hero-image/wdd230wp-1200.webp 1200w"
+            type="image/webp"
+          />
+          <img
             src="images/hero-image/wdd230wp-800.webp"
             alt="Hogsmeade Station"
-            srcset="
-              images/hero-image/wdd230wp-200.webp   200w,
-              images/hero-image/wdd230wp-500.webp   500w,
-              images/hero-image/wdd230wp-800.webp   800w,
-              images/hero-image/wdd230wp-1100.webp 1100w,
-              images/hero-image/wdd230wp-1200.webp 1200w
-            "
-        /></picture>
+          />
+        </picture>
         <a href="#"><div class="overlay">Join the chamber</div></a>
       </div>
       <article class="size1 event left">
@@ -136,7 +150,7 @@
     <footer>
       <div class="chamber">
         <picture>
-          <img src="images/logo/hcoc-logo-svg.svg" alt="HCOC logo"
+          <img src="images/logo/hcoc-logo-wp.webp" alt="HCOC logo"
         /></picture>
         <div class="address">
           <p class="footer-title">Hogsmeade Chamber of Commerce</p>
