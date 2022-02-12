@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
-    <script defer src="js/server.js"></script>
     <script defer src="js/scripts.js"></script>
+    <script defer src="js/windchill.js"></script>
     <title>Chamber Home Page Build</title>
   </head>
   <body>
@@ -31,7 +31,7 @@
         <a href="index.html"
           ><picture>
             
-            <img id="logo" src="images/logo/hcoc-logo-tinified.webp" alt="HCOC logo"
+            <img id="logo" src="images/logo/hcoc-logo-svg.svg" alt="HCOC logo"
         />
           </picture></a>
         <section id="headings">
@@ -62,13 +62,12 @@
     <main>
       <div class="hero-sec hero">
         <picture
-        >
-        <source media="(max-width: 200px)" srcset="images/hero-image/wdd230wp-200.webp">
-        <source media="(max-width: 500px)" srcset="images/hero-image/wdd230wp-500.webp">
-        <source media="(max-width: 800px)" srcset="images/hero-image/wdd230wp-800.webp">
-        <source media="(max-width: 1100px)" srcset="images/hero-image/wdd230wp-1100.webp">
-        <source media="(max-width: 1200px)" srcset="images/hero-image/wdd230wp-1200.webp">
-        <img src="images/hero-image/wdd230wp-800.webp" alt="Hogsmeade Station"
+        ><img src="images/hero-image/wdd230wp-800.webp" alt="Hogsmeade Station"
+              srcset="images/hero-image/wdd230wp-200.webp 200w,
+                      images/hero-image/wdd230wp-500.webp 500w,
+                      images/hero-image/wdd230wp-800.webp 800w,
+                      images/hero-image/wdd230wp-1100.webp 1100w,
+                      images/hero-image/wdd230wp-1200.webp 1200w"
       /></picture>
       <a href="#"><div class="overlay">
         Join the chamber
@@ -87,11 +86,11 @@
         <h3>Weather</h3>
         <div class="temp">
           <i class="fas fa-cloud-sun"></i>
-          <p>33&#8457;</p>
+          <p><span class="temperature">33</span></p>
           <p>Chance of Rain</p>
           <div class="wind">
-            <p>Wind Speed: 1000 km/h</p>
-            <p>Wind Chill: "Bite your toes off"</p>
+            <p>Wind Speed: <span class="windspeed">10</span> kmh</p>
+            <p>Wind Chill: <span class="windchill"></span></p>
           </div>
         </div>
       </div>
@@ -124,7 +123,7 @@
     <footer>
       <div class="chamber">
         <picture>
-          <img src="images/logo/hcoc-logo-tinified.webp" alt="HCOC logo"
+          <img src="images/logo/hcoc-logo-svg.svg" alt="HCOC logo"
         /></picture>
         <div class="address">
           <p class="footer-title">Hogsmeade Chamber of Commerce</p>
