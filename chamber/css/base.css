@@ -262,8 +262,13 @@ main.discover .places {
   margin: 1rem auto;
 }
 
-main.discover div picture {
+main.discover div picture img[data-src] {
   width: 640px;
   height: 427px;
+  filter: blur(0.2em);
 }
 
+main.discover div picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
