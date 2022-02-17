@@ -152,6 +152,7 @@
 
   main.discover {
     height: auto;
+    max-width: 40%;
   }
 
 }
