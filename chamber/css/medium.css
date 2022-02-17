@@ -145,4 +145,12 @@
     padding: 1rem;
   }
 
+
+  /*-------------------------- D I S C O V E R --------------------------*/
+
+  main.discover {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
 }

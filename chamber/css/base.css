@@ -237,3 +237,32 @@ li {
   display: table;
   clear: both;
 }
+
+
+
+
+/*------------------------- D I S C O V E R -------------------------*/
+
+
+/*------------------ M A I N ------------------*/
+main.discover {
+  display: flex;
+  flex-direction: column;
+}
+
+main.discover h2 {
+  text-align: center;
+}
+
+main.discover p {
+  font-weight: 600;
+}
+
+main.discover .places {
+  margin: 1rem auto;
+}
+
+main.discover div picture {
+  width: 640px;
+  height: 427px;
+}
