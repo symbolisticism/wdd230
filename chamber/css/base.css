@@ -260,7 +260,18 @@ main.discover p {
 }
 
 main.discover .places {
-  margin: 1rem auto;
+  margin: 2rem auto;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: border-radius 0.5s;
+}
+
+main.discover .places:hover {
+  border-radius: 5px;
+}
+
+main.discover p.content {
+  padding: 0.75rem;
 }
 
 /* main.discover div picture img[data-src] {

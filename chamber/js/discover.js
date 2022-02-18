@@ -10,7 +10,7 @@ if (lastvisit != 0) {
 
   let daysBetween = (thisvisit - lastvisit) / FACTOR;
 
-  document.querySelector('.lastvisit').textContent = 'It has been ' + daysBetween.toFixed(0) + ' days since your last visit. Welcome back!';
+  document.querySelector('.lastvisit').textContent = 'It has been ' + daysBetween.toFixed(0) + ' day(s) since your last visit. Welcome back!';
 
   
 } else {
