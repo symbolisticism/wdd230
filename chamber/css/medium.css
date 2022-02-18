@@ -153,4 +153,8 @@
     margin: 0 auto;
   }
 
+  main.discover div.places:hover {
+    box-shadow: 5px 5px 10px #333;
+  }
+
 }

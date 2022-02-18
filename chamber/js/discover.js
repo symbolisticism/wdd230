@@ -1,23 +1,23 @@
 // get the stored value in localStorage
-let lastvisit = Number(window.localStorage.getItem("last-visit"));
+let lastvisit = Number(window.localStorage.getItem('lastvisit'));
+
+let thisvisit = Date.now();
 
 if (lastvisit != 0) {
 
-  let thisvisit = Date.now();
 
-  let FACTOR = 1000;
+  let FACTOR = 86400000;
 
-  let secondsBetween = (thisvisit - lastvisit) / FACTOR;
+  let daysBetween = (thisvisit - lastvisit) / FACTOR;
 
-  document.querySelector('.lastvisit').textContent = 'It has been ' + secondsBetween + ' seconds since your last vist.';
+  document.querySelector('.lastvisit').textContent = 'It has been ' + daysBetween.toFixed(0) + ' days since your last visit. Welcome back!';
 
-  window.localStorage.setItem(lastvisit, thisvisit);
-
-  thisvisit = NULL;
   
 } else {
-
-  window.localStorage.setItem('last-visit', Date.now());
-  document.querySelector('.lastvisit').textContent = 'This is your first visit!';
-
+  
+  window.localStorage.setItem('lastvisit', Date.now());
+  document.querySelector('.lastvisit').textContent = 'This is your first visit! Find something you\'ll love!';
+  
 }
+
+  window.localStorage.setItem('lastvisit', thisvisit);
