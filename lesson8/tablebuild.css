@@ -14,7 +14,6 @@ body {
 
 table {
   border-collapse: collapse;
-  
 }
 
 th,
@@ -31,6 +30,10 @@ td {
 
 .medblue {
   background-color: #7fbac2;
+}
+
+.rowheader {
+  font-weight: normal;
 }
 
 table thead tr th {
