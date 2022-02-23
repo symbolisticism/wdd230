@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  
+}
+
+th,
+td {
+  border: 1px solid #899da7;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+}
+
+.darkblue {
+  background-color: #628ca5;
+  color: white;
+}
+
+.medblue {
+  background-color: #7fbac2;
+}
+
+table thead tr th {
+  font-size: 1.5rem;
+}
+
+table tfoot tr td {
+  font-size: 0.8rem;
+}
+
+/* zebra striping */
+
+tbody tr:nth-child(odd) {
+  background-color: #e7ffed;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e7f0ed;
+}
+
+tbody tr {
+  background-image: url(noise.png);
+}
+
+table {
+  background-color: #eee;
+}
