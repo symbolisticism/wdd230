@@ -401,3 +401,18 @@ input[type=radio] {
   width: 2rem;
   height: 2rem;
 }
+
+legend {
+  font-weight: bold;
+}
+
+.joinheader {
+  padding: 1rem 0 0 0;
+  margin-left: 3%;
+}
+
+.cost {
+  background-color: #999;
+  padding: 0.5rem;
+  border-radius: 10px;
+}

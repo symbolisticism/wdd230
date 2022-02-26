@@ -60,7 +60,7 @@
       <div id="date"></div>
     </header>
     <main class="join">
-      <h1>Join the Chamber</h1>
+      <h1 class="joinheader">Join the Chamber</h1>
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>Applicant Information</legend>
@@ -96,7 +96,7 @@
           <legend>Membership Options</legend>
           <label class="sbs"
             ><input type="radio" name="memberships" value="np" /> Non
-            Profit</label
+            Profit <span class="cost">Free</span></label
           >
           <ul class="memlevels">
             <li>Business listing on the Hogsmeade Chamber website</li>
@@ -109,7 +109,7 @@
               type="radio"
               name="memberships"
               value="bronze"
-            /> Bronze</label
+            /> Bronze <span class="cost">$200</span></label
           >
           <ul class="memlevels">
             <li>Everything in the Non Profit Membership</li>
@@ -122,7 +122,7 @@
               type="radio"
               name="memberships"
               value="Silver"
-            /> Silver</label
+            /> Silver <span class="cost">$400</span></label
           >
           <ul class="memlevels">
             <li>Everything in Non Profit and Bronze Memberships</li>
@@ -135,7 +135,7 @@
               type="radio" 
               name="memberships" 
               value="gold"
-            /> Gold</label
+            /> Gold <span class="cost">$600</span></label
           >
           <ul class="memlevels">
             <li>Everything in Non Profit, Bronze, and Silver Memberships</li>
@@ -148,7 +148,7 @@
         <fieldset>
           <legend>Your Business</legend>
           <label class="top business"
-            >Business Description<input type="text" name="business"
+            >Business Description<input type="text" name="business" class="busdes"
           /></label>
         </fieldset>
         <input

@@ -170,6 +170,11 @@ main.join * {
   text-align: left;
 }
 
+main.join {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 .membership {
   display: grid;
   grid-template-columns: 1fr 1fr;
