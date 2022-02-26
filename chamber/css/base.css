@@ -284,3 +284,73 @@ main.join * {
 main.join {
   display: block;
 }
+
+/*--------------------- J O I N ---------------------*/
+
+/*------------ FORM -------------*/
+
+form * {
+  font-family: 'Luxurious Roman', cursive;
+  font-size: 1.2rem;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 4px outset grey;
+    border-radius: 18px;
+    padding: 0.5rem 2%;
+
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #555;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem 2%;
+    color: #555;
+    margin
+}
+
+form input.submit {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border: 2px solid red;
+}
+
+form label.top input:required:valid {
+    border: 2px solid green;
+}
