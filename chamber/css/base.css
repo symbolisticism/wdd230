@@ -333,6 +333,7 @@ form label.sbs {
     display: block;
     padding: 0.75rem 2%;
     color: #555;
+    font-size: 1.5rem;
 }
 
 form input.submit {
@@ -344,6 +345,7 @@ form input.submit {
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 20rem;
+    text-align: center;
 }
 
 form label.top input:required {
@@ -383,4 +385,19 @@ div.tymessage {
 
 .joinwayfind {
   background-color: rgba(0,0,0,0.5);
+}
+
+.membership {
+  display: flex;
+  flex-direction: column;
+}
+
+.memlevels {
+  display: none;
+}
+
+input[type=radio] {
+  font: inherit;
+  width: 2rem;
+  height: 2rem;
 }

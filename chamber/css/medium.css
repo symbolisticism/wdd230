@@ -157,11 +157,31 @@
     box-shadow: 10px 10px 40px #333, -10px -10px 40px #333;
   }
 
-}
+
 
 /*-------------------------- J O I N --------------------------*/
 
 main.thankyou div.tylogo {
   max-width: 90%;
   margin: 0 auto;
+}
+
+main.join * {
+  text-align: left;
+}
+
+.membership {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.memlevels {
+  display: block;
+}
+
+.memlevels, 
+.sbs {
+  padding: 1rem 0;
+}
+
 }

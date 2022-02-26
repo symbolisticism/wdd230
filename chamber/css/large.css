@@ -173,4 +173,8 @@ main.thankyou div.tymessage {
   width: 40vw;
 }
 
+main.join {
+  height: auto;
+}
+
 }

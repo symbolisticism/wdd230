@@ -60,7 +60,7 @@
       <div id="date"></div>
     </header>
     <main class="join">
-      <h1 style="text-align: center">Join the Chamber</h1>
+      <h1>Join the Chamber</h1>
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>Applicant Information</legend>
@@ -92,31 +92,57 @@
           /></label>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="membership">
           <legend>Membership Options</legend>
-          <div>Audience</div>
           <label class="sbs"
-            ><input type="radio" name="membership" value="np" />Non
+            ><input type="radio" name="memberships" value="np" /> Non
             Profit</label
           >
+          <ul class="memlevels">
+            <li>Business listing on the Hogsmeade Chamber website</li>
+            <li>Subscription to the Chamber's weekly email</li>
+            <li>Business referrals</li>
+            <li>Opportunity to serve on committees and taskforces</li>
+          </ul>
           <label class="sbs"
             ><input
               type="radio"
-              name="membership"
+              name="memberships"
               value="bronze"
-            />Bronze</label
+            /> Bronze</label
           >
+          <ul class="memlevels">
+            <li>Everything in the Non Profit Membership</li>
+            <li>Ability to purchase a multi-business membership</li>
+            <li>Expanded business listing including maplinks, hours of operation, etc.</li>
+            <li>Opportunity to sponsor and participate in special events</li>
+          </ul>
           <label class="sbs"
             ><input
               type="radio"
-              name="membership"
+              name="memberships"
               value="Silver"
-            />Silver</label
+            /> Silver</label
           >
-
+          <ul class="memlevels">
+            <li>Everything in Non Profit and Bronze Memberships</li>
+            <li>URL link to consumer-based review site</li>
+            <li>Placement of business card in Chamber lobby</li>
+            <li>Three slideshow photos and seven keywords/phrases added to business listing</li>
+          </ul>
           <label class="sbs"
-            ><input type="radio" name="membership" value="gold" />Gold</label
+            ><input 
+              type="radio" 
+              name="memberships" 
+              value="gold"
+            /> Gold</label
           >
+          <ul class="memlevels">
+            <li>Everything in Non Profit, Bronze, and Silver Memberships</li>
+            <li>Business logo displayed in Chamber's weekly emails</li>
+            <li>Reserved seats at special events</li>
+            <li>Ribbon cutting or grand opening event upon joining</li>
+          </ul>
         </fieldset>
 
         <fieldset>
@@ -125,7 +151,12 @@
             >Business Description<input type="text" name="business"
           /></label>
         </fieldset>
-        <input type="submit" value="Send My Application" class="submit" onclick="storeDate()" />
+        <input
+          type="submit"
+          value="Send My Application"
+          class="submit"
+          onclick="storeDate()"
+        />
         <span class="time" hidden></span>
       </form>
     </main>
