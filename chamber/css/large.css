@@ -149,10 +149,28 @@
   }
 
   /*------------------------ D I S C O V E R ------------------------*/
-
+  
   main.discover {
     height: auto;
     max-width: 40%;
   }
+
+
+
+/*------------------------ J O I N ------------------------*/
+
+main.thankyou {
+  height: 100vh;
+  flex-direction: row;
+  align-items: center;
+}
+
+main.thankyou img {
+  height: 20rem;
+}
+
+main.thankyou div.tymessage {
+  width: 40vw;
+}
 
 }

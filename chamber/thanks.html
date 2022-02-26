@@ -52,84 +52,24 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="#">Directory</a></li>
-            <li><a class="joinwayfind" href="join.html">Join</a></li>
+            <li><a href="join.html">Join</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </div>
       <div id="date"></div>
     </header>
-    <main class="join">
-      <h1 style="text-align: center">Join the Chamber</h1>
-      <form method="get" action="thanks.html">
-        <fieldset>
-          <legend>Applicant Information</legend>
-          <label class="top"
-            >First Name* <input type="text" name="fname" required
-          /></label>
-          <label class="top"
-            >Last Name* <input type="text" name="lname" required
-          /></label>
-          <label class="top"
-            >Business Position
-            <input type="text" name="position" pattern="*[A-Z][a-z]"
-          /></label>
-          <label class="top"
-            >Email*
-            <input
-              type="email"
-              name="email"
-              placeholder="johndoe@email.com"
-              required
-          /></label>
-          <label class="top"
-            >Phone*
-            <input type="tel" name="phone" placeholder="1235559876" required
-          /></label>
-          <label class="top"
-            >Job Title*
-            <input type="text" name="title" required pattern="*[A-Z][a-z]"
-          /></label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Membership Options</legend>
-          <div>Audience</div>
-          <label class="sbs"
-            ><input type="radio" name="membership" value="np" />Non
-            Profit</label
-          >
-          <label class="sbs"
-            ><input
-              type="radio"
-              name="membership"
-              value="bronze"
-            />Bronze</label
-          >
-          <label class="sbs"
-            ><input
-              type="radio"
-              name="membership"
-              value="Silver"
-            />Silver</label
-          >
-
-          <label class="sbs"
-            ><input type="radio" name="membership" value="gold" />Gold</label
-          >
-        </fieldset>
-
-        <fieldset>
-          <legend>Your Business</legend>
-          <label class="top business"
-            >Business Description<input type="text" name="business"
-          /></label>
-        </fieldset>
-        <input type="submit" value="Send My Application" class="submit" onclick="storeDate()" />
-        <span class="time" hidden></span>
-      </form>
+    <main class="thankyou">
+      <div class="tylogo">
+        <picture>
+          <img src="images/logo/hcoc-logo-svg.svg" alt="Hogsmeade Chamber Logo">
+        </picture>
+      </div>
+      <div style="color: black;" class="tymessage">
+        Thank you for applying to join the Hogsmeade Chamber of Commerce! We will be in touch with you shortly regarding your application.
+      </div>
     </main>
-    <footer>
+    <footer class="ty">
       <div class="chamber">
         <picture>
           <img src="images/logo/hcoc-logo-wp.webp" alt="HCOC logo"
