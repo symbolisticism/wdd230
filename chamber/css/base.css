@@ -312,7 +312,7 @@ form label.top,
 form div {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: #502419;
     font-size: 0.8rem;
 }
 
@@ -332,7 +332,7 @@ form label.top select {
 form label.sbs {
     display: block;
     padding: 0.75rem 2%;
-    color: #555;
+    /* color: #555; */
     font-size: 1.5rem;
 }
 
@@ -419,4 +419,16 @@ legend {
 
 .business {
   padding: 0.5rem;
+}
+
+form label.bronze {
+  color: #CD7F32;
+}
+
+form label.silver {
+  color: #555;
+}
+
+form label.gold {
+  color: #d4af37;
 }
