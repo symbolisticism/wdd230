@@ -1,0 +1,38 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.cardclass {
+  border: 4px inset lightblue;
+  background-color: #999;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+  max-width: 100%;
+}
+
+.cardclass img {
+  width: 100%;
+}
+
+h1, 
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.birth {
+  padding: 0.25rem;
+}
+
+main {
+  max-width: 95%;
+  margin: 0 auto;
+  border: 2px solid darkslateblue;
+  padding: 1rem;
+  background-color: #555;
+  box-shadow: 15px 15px 30px #777, -15px -15px 30px #777;
+  margin-bottom: 3rem;
+}
