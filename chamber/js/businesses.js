@@ -1,4 +1,4 @@
-const requestURL = 'data.json';
+const requestURL = 'https://symbolisticism.github.io/wdd230/chamber/js/businesses.js';
 const cards = document.querySelector('.cards');
 
 fetch(requestURL)
@@ -7,8 +7,8 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const prophets = jsonObject['businesses'];
-    prophets.forEach(displayBusinesses);
+    const businesses = jsonObject['businesses'];
+    businesses.forEach(displayBusinesses);
   });
   
 function displayBusinesses(business) {
