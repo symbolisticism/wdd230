@@ -24,7 +24,8 @@ function displayBusinesses(business) {
   card.setAttribute('class', 'cardclass');
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-  picture.setAttribute('src', business.icon);
+  picture.src = business.icon;
+  console.log(business.icon);
   picture.setAttribute('alt', `Picture of ${business.name}`);
   picture.setAttribute('loading', 'lazy');
 

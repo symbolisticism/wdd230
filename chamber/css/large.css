@@ -143,6 +143,10 @@
     padding: 0 0.5rem;
   }
 
+  main.directoryfooter {
+    height: auto;
+  }
+
   /* H E A D E R */
   .fab {
     margin: 1rem 2rem;
