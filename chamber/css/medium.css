@@ -189,4 +189,8 @@ main.join {
   padding: 1rem 0;
 }
 
+.cardclass {
+  margin: 0 auto;
+}
+
 }

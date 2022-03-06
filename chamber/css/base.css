@@ -440,7 +440,7 @@ form label.gold {
 .cardclass {
   border: 4px outset #502419;
   /* background-color: #999; */
-  margin: 0 auto;
+  /* margin: auto; */
   padding: 1rem;
   text-align: center;
   width: 321.28px;

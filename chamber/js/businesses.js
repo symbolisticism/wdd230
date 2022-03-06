@@ -106,7 +106,7 @@ function toggleGrid() {
 
   cards.forEach(function (card) {
     card.style.border = "4px outset #502419";
-    card.style.minWidth = "321.28px";
+    card.style.width = "321.28px";
     card.style.width = "auto";
     card.style.display = "flex";
     card.style.flexDirection = "column";
