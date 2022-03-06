@@ -375,15 +375,11 @@ div.tymessage {
   font-weight: bold;
 }
 
-.homewayfind {
-  background-color: rgba(0,0,0,0.5);
-}
-
-.discoverwayfind {
-  background-color: rgba(0,0,0,0.5);
-}
-
-.joinwayfind {
+.homewayfind, 
+.directorywayfind,
+.discoverwayfind,
+.joinwayfind,
+.contactwayfind {
   background-color: rgba(0,0,0,0.5);
 }
 
@@ -431,4 +427,63 @@ form label.silver {
 
 form label.gold {
   color: #d4af37;
+}
+
+/*------------- D I R E C T O R Y -------------*/
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.cardclass {
+  border: 4px outset #502419;
+  /* background-color: #999; */
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  width: 321.28px;
+  height: auto;
+  max-width: 100%;
+}
+
+.cardclass * {
+  padding: 0.25rem;
+  color: black;
+  font-weight: bold;
+}
+
+main.directory {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 95%;
+}
+
+.gridview,
+.listview {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+  border: 4px solid black;
+  padding: 0.5rem;
+}
+
+.togglebuttons {
+  margin: 2rem auto;
+
+}
+
+div.cards.on {
+  display: block;
+}
+
+div.cards.on section:nth-child(odd) {
+  background-color: #999;
+}
+
+.nounderline {
+  text-decoration: none;
 }
