@@ -229,6 +229,15 @@ li {
   font-family: 'Luxurious Roman', cursive;
 }
 
+main div.weather figure figcaption {
+  font-size: 1.3rem;
+  font-family: 'Luxurious Roman', cursive;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+  padding: 0.5rem;
+  width: 75%;
+  margin: 0 auto;
+}
 
 
 /*------------------------ C L E A R  F I X ------------------------*/
@@ -237,8 +246,6 @@ li {
   display: table;
   clear: both;
 }
-
-
 
 
 /*------------------------- D I S C O V E R -------------------------*/

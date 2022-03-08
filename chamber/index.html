@@ -14,15 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Merienda&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/51a8985088.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/base.css"  />
+    <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/scripts.js"></script>
-    <script defer src="js/windchill.js"></script>
+    <script defer src="js/weatherapi.js"></script>
     <title>Chamber Home Page Build</title>
   </head>
   <body>
@@ -113,11 +109,14 @@
       <div class="size1 weather left">
         <h3>Weather</h3>
         <div class="temp">
-          <i class="fas fa-cloud-sun"></i>
-          <p><span class="temperature">33</span>&#176;F</p>
-          <p>Chance of Rain</p>
+          <figure>
+            <img src="#" alt="" id="weathericon" />
+            <figcaption></figcaption>
+          </figure>
+          <p><span class="temperature"></span>&#176;C</p>
+          <span class="weatherdesc"></span>
           <div class="wind">
-            <p>Wind Speed: <span class="windspeed">10</span> kmh</p>
+            <p>Wind Speed: <span class="windspeed"></span> km/h</p>
             <p>Wind Chill: <span class="windchill"></span></p>
           </div>
         </div>
@@ -149,7 +148,9 @@
         </div>
       </section>
       <div class="size1 join left">
-        <a href="join.html" class="join-link"><div class="join-div">Join Us!</div></a>
+        <a href="join.html" class="join-link"
+          ><div class="join-div">Join Us!</div></a
+        >
         <p>Find out how joining the chamber will benefit your organization!</p>
       </div>
     </main>
