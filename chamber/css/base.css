@@ -137,9 +137,24 @@ footer .moreinfo {
   padding-top: 0.5rem;
 }
 
-
+footer a:link, 
+footer a:visited,
+footer a:hover,
+footer a:active {
+  color: white;
+}
 
 /*------------------------- B O D Y -------------------------*/
+
+main p,
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  text-align: center;
+}
 
 main .size1 {
   background-color: #626c66;
@@ -239,6 +254,17 @@ main div.weather figure figcaption {
   margin: 0 auto;
 }
 
+div.weather {
+  text-align: center;
+}
+
+.pwind {
+  padding: 0.125rem 0;
+}
+
+.othertemp {
+  padding-top: 0.5rem;
+}
 
 /*------------------------ C L E A R  F I X ------------------------*/
 .clearfix:after {

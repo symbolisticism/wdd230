@@ -113,11 +113,15 @@
             <img src="#" alt="" id="weathericon" />
             <figcaption></figcaption>
           </figure>
-          <p><span class="temperature"></span>&#176;C</p>
+          <p class="pwind othertemp">
+            <span class="temperature"></span>&#176;C
+          </p>
           <span class="weatherdesc"></span>
           <div class="wind">
-            <p>Wind Speed: <span class="windspeed"></span> km/h</p>
-            <p>Wind Chill: <span class="windchill"></span></p>
+            <p class="pwind">
+              Wind Speed: <span class="windspeed"></span> km/h
+            </p>
+            <p class="pwind">Wind Chill: <span class="windchill"></span></p>
           </div>
         </div>
       </div>
@@ -176,8 +180,8 @@
         </p>
         <p class="iline name">Gabriele Peck</p>
         <p class="iline project">WDD 230 Project</p>
-
         <span id="lastmod"></span>
+        <p>Weather information driven by the <a href="https://openweathermap.org/">OpenWeatherMap API.</a></p>
       </div>
     </footer>
   </body>
