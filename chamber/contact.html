@@ -14,15 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Merienda&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/51a8985088.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/scripts.js"></script>
-    <script defer src="js/businesses.js"></script>
     <title>Chamber Home Page Build</title>
   </head>
   <body>
@@ -41,8 +36,12 @@
           <h2>Chamber of Commerce</h2>
         </section>
         <div id="medialinks" class="medialinks">
-          <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com" alt="facebook link"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.linkedin.com" alt="linkedin link"
+            ><i class="fab fa-linkedin"></i
+          ></a>
         </div>
         <nav>
           <button id="hamburgerBtn" type="button">
@@ -51,22 +50,52 @@
           <ul id="primaryNav">
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li>
-              <a class="directorywayfind" href="directory.html">Directory</a>
-            </li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a class="contactwayfind" href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
-      <div id="date"></div>
+      <div id="date">lorem ipsum</div>
     </header>
-    <main class="directory">
-      <div class="togglebuttons">
-        <a href="#" class="nounderline"><span class="gridview">&#9783;</span></a>
-        <a href="#" class="nounderline"><span class="listview">&#9776;</span></a>
-      </div>
-      <div class="cards"></div>
+    <main class="contact">
+      <form action="thanks2.html">
+        <fieldset>
+          <legend>Contact</legend>
+          <div>
+            <p><strong>Address:</strong></p>
+            <p>
+              Hogsmeade Chamber of Commerce<br />676 Stacking Hags Lane<br />Hogsmeade,
+              Scotland
+            </p>
+          </div>
+          <p><strong>Phone Number: </strong>+44 (1320) 629-8731</p>
+          <p><strong>Email: </strong><a href="#">hcoc@gmail.com</a></p>
+          <p>
+            <strong
+              >If you'd like to send us a message directly, you can do so with
+              the following form.</strong
+            >
+          </p>
+          <label class="top" for="fname"
+            >First Name* <input type="text" name="fname" pattern="*[A-Z][a-z]" required
+          /></label>
+          <label class="top" for="lname"
+            >Last Name* <input type="text" name="lname" pattern="*[A-Z][a-z]" required
+          /></label>
+          <label class="top" for="email"
+            >Email* <input type="email" name="email" placeholder="somebody@email.com" required
+          /></label>
+          <label class="top" for="message"
+            >Message* <input type="text" name="message" placeholder="Message" required
+          /></label>
+        </fieldset>
+        <input
+          type="submit"
+          value="Send Message"
+          class="submit"
+        />
+      </form>
     </main>
     <footer>
       <div class="chamber">
@@ -90,8 +119,11 @@
         </p>
         <p class="iline name">Gabriele Peck</p>
         <p class="iline project">WDD 230 Project</p>
-
         <span id="lastmod"></span>
+        <p>
+          Weather information driven by the
+          <a href="https://openweathermap.org/">OpenWeatherMap API.</a>
+        </p>
       </div>
     </footer>
   </body>

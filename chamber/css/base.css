@@ -266,6 +266,13 @@ div.weather {
   padding-top: 0.5rem;
 }
 
+#weathericon {
+  background-color: #999;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
 /*------------------------ C L E A R  F I X ------------------------*/
 .clearfix:after {
   content: "";
@@ -519,4 +526,19 @@ div.cards.on section:nth-child(odd) {
 
 .nounderline {
   text-decoration: none;
+}
+
+/*---------------------------- C O N T A C T ----------------------------*/
+main.contact {
+  display: block;
+  height: auto;
+}
+
+main.contact * {
+  color: black;
+  text-align: left;
+}
+
+main.contact, fieldset > * {
+  margin: 1rem 2%;
 }
