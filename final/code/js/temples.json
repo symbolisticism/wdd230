@@ -5,7 +5,11 @@
     "state":"Saxony",
     "size":"13,500 sqft",
     "name": "Freiberg Temple",
-    "src":"./images/temples/freiberg_temple.webp"
+    "src":"https://symbolisticism.github.io/wdd230/final/code/temples/freiberg_temple.webp",
+    "address":"Hainichener Strasse 64, 09599 Freiberg, Germany",
+    "phone":"(49) 3731-35960",
+    "email":"freibergtemple@missionary.org",
+    "services":"living ordinances, proxy ordinances"
   },
   {
     "dedicated": "13 October 1996",
@@ -13,7 +17,11 @@
     "state":"Utah",
     "size":"107,240 sqft",
     "name": "Mount Timpanogos Temple",
-    "src":"./images/temples/mount_timpanogos_temple.webp"
+    "src":"https://symbolisticism.github.io/wdd230/final/code/temples/mount_timpanogos_temple.webp",
+    "address":"742 N 900 E, American Fork UT 84003-9124, United States",
+    "phone":"(1) 801-763-4540",
+    "email":"timpanogostemple@missionary.org",
+    "services":"living ordinances, proxy ordinances"
   },
   {
     "dedicated": "11 March 1956",
@@ -21,7 +29,11 @@
     "state":"California",
     "size":"190,614 sqft",
     "name": "Los Angeles Temple",
-    "src":"./images/temples/los_angeles_temple.webp"
+    "src":"https://symbolisticism.github.io/wdd230/final/code/temples/los_angeles_temple.webp",
+    "address":"10777 Santa Monica Blvd, Los Angeles CA 90025-4718, United States",
+    "phone":"(1) 310-474-5569",
+    "email":"losangelestemple@missionary.org",
+    "services":"living ordinances, proxy ordinances"
   },
   {
     "dedicated": "11 September 1955",
@@ -29,6 +41,10 @@
     "state":"Bern",
     "size":"35,546 sqft",
     "name": "Bern Temple",
-    "src":"./images/temples/bern_temple.webp"
+    "src":"https://symbolisticism.github.io/wdd230/final/code/temples/bern_temple.webp",
+    "address":"Tempelstrasse 2, CH-3052 Zollikofen, Switzerland",
+    "phone":"(41) 31-915-5252",
+    "email":"berntemple@missionary.org",
+    "services":"living ordinances, proxy ordinances"
   }
 ]

@@ -9,6 +9,28 @@ img {
   max-width: 100%;
 }
 
+p,
+li {
+  font-family: 'BioRhyme', serif;
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: 'EB Garamond', serif;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
 /*----------------------------------- B O D Y -----------------------------------*/
 body {
   max-width: 1000px;
@@ -114,7 +136,6 @@ nav ul.open { display: block; }
   bottom: 20px;
   right: 10px;
   background-color: white;
-  padding: 1rem;
   border-radius: 5px;
 }
 
@@ -192,6 +213,13 @@ div.templespotlight > * {
 
 .toggleinline {
   display: inline;
+}
+
+main div.mainpics div.child a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 1rem;
 }
 
 /*--------------------------------- F O O T E R ---------------------------------*/
@@ -303,4 +331,38 @@ main.thanks {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*---------------------------------------- T E M P L E S ----------------------------------------*/
+div.temples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+  justify-items: center;
+  align-items: center;
+  grid-gap: 1rem;
+  margin: 1rem;
+  border: 2px solid #030029;
+  padding: 1rem;
+}
+
+div.temples > * {
+  border: 1px solid #6E7271;
+  padding: 0.5rem;
+  min-width: 257px;
+}
+
+/*---------------------------------------- S E R V I C E S ----------------------------------------*/
+main.services ul {
+  /* max-width: 960px; */
+  margin: 0 auto;
+}
+
+main.services ul li {
+  list-style-type: none;
+}
+
+main.services > * {
+  margin: 1rem 0;
+  border: 1px solid #6E7271;
+  padding: 1rem;
 }

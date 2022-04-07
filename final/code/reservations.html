@@ -61,6 +61,10 @@
             >Phone*
             <input type="tel" name="phone" placeholder="1235559876" required
           /></label>
+          <label class="top"
+            >Home State (Or Country, if Outside of the US)*
+            <input type="text" name="homeState" placeholder="Missouri" required
+          /></label>
         </fieldset>
 
         <fieldset class="membership">
@@ -73,7 +77,7 @@
             Our basic package is a nice 800 square foot room with a queen size
             bed, tub and shower, and all the appliances you would need to
             prepare for your temple visit (ironing board, steamer, shoe shine,
-            etc.). Breakfast is included.
+            etc.). Included with every package is breakfast, the gym, an indoor pool, WiFi high-speed internet access and smart TVs, parking, a temple shuttle, and family history consultation and family ordinance card service.
           </p>
           <label class="sbs bronze"
             ><input type="radio" name="packages" value="terrestrial" />
@@ -81,9 +85,7 @@
           >
           <p class="memlevels">
             The Terrestrial Package is a wonderful addition to the Telestial
-            Package. With all of our basic commodities and comforts, this one
-            also comes with access to a pool and sauna, the on-site gym, and
-            lunch is added on to your stay.
+            Package. Lunch is added on to this package, as well as access to Holy Places Inn's paid Ancestry.com account available for your personal family history use.
           </p>
           <label class="sbs silver"
             ><input type="radio" name="packages" value="celestial" /> Celestial
@@ -108,7 +110,7 @@
           </p>
         </fieldset>
         <fieldset class="reservationdates">
-          <legend>Dates</legend>
+          <legend>Visit Details</legend>
           <label for="startDate" class="top"
             >Start Date*
             <input type="date" id="startDate" name="startDate" required
@@ -116,6 +118,23 @@
           <label for="endDate" class="top"
             >End Date*
             <input type="date" id="endDate" name="endDate" required
+          /></label>
+          <label class="top"
+            >Location* <input type="text" name="location" required
+          /></label>
+          <label class="top"
+            >Number of Rooms* <input type="number" name="numRooms" required
+          /></label>
+          <label class="top"
+            >Type of Room* <select name="rooms" id="rooms" required>
+              <option value="select">Select &#9660;</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="Suite">Suite</option>
+            </select></label>
+            <label class="top"
+            >Special Accomodations/Comments <input type="text" name="comments"
           /></label>
         </fieldset>
         <input
@@ -136,8 +155,10 @@
             alt="Holy Places Inn logo"
         /></picture>
         <div>
-          Holy Places Inn<br />holyplacesinn@gmail.com<br />2236 W Karchner
-          Place<br />Baltimore, MD 21212
+          Holy Places Inn<br />holyplacesinn@gmail.com<br /><a
+            href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832559,-77.0977205,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318"
+            >4800 Montgomery Ln #300<br />Bethesda, MD 20814</a
+          >
         </div>
         <p>
           <q>

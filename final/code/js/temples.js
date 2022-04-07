@@ -1,7 +1,7 @@
 const requestURL =
   "https://symbolisticism.github.io/wdd230/final/code/js/temples.json";
 
-const cards = document.querySelector(".cards");
+const cards = document.querySelector(".temples");
 
 fetch(requestURL)
   .then(function (response) {
@@ -18,16 +18,19 @@ function displayTemples(temple) {
   let card = document.createElement("section");
   let title = document.createElement("div");
   let picture = document.createElement("img");
-  let address = document.createElement("div");
-  let phone = document.createElement("div");
-  let anchor = document.createElement("a");
+  let size = document.createElement("p");
+  let dedicated = document.createElement("p");
+  let address = document.createElement('p');
+  let phone = document.createElement('p');
+  let email = document.createElement('p');
+  let services = document.createElement('p');
 
   // give the card a class
   card.setAttribute("class", "cardclass");
 
   // get the title
   title.textContent = `${temple.name}`;
-  title.setAttribute("class", "line");
+  title.style.fontWeight = "bold";
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
   picture.setAttribute("src", temple.src);
@@ -35,12 +38,27 @@ function displayTemples(temple) {
   picture.setAttribute("loading", "lazy");
   picture.setAttribute("class", "cardimg");
 
+  size.innerText = `Size: ${temple.size}`;
+
+  address.innerText = `${temple.address}`;
+
+  phone.innerText = `${temple.phone}`;
+
+  email.innerText = `${temple.email}`;
+  
+  services.innerText = `${temple.services}`;
+  
+  dedicated.innerText = `Dedicated: ${temple.dedicated}`;
+
   // Add/append the section(card) with all elements
   card.appendChild(picture);
   card.append(title);
+  card.append(size);
   card.append(address);
   card.append(phone);
-  card.append(anchor);
+  card.append(email);
+  card.append(services);
+  card.append(dedicated);
 
   // Add/append the existing HTML div with the cards class with the section(card)
   cards.appendChild(card);
