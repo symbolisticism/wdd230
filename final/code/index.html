@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Website for members of the LDS Church to coordinate visits to the temple.">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <meta
+      name="description"
+      content="Website for members of the LDS Church to coordinate visits to the temple."
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/index.js"></script>
+    <script defer src="js/weatherapi.js"></script>
     <title>Holy Places Inn</title>
   </head>
   <body>
@@ -18,29 +22,94 @@
           <span>&#9776;</span><span>X</span>
         </button>
         <ul id="primaryNav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Temples</a></li>
-          <li><a href="#">Reservations</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="temples.html">Temples</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="services.html">Services</a></li>
         </ul>
       </nav>
-      <picture id="headerlogo"><img src="logo/logo_small_icon_only.png" alt="Holy Places Inn logo"></picture>
+      <picture id="headerlogo"
+        ><img src="logo/logo_small_icon_only.png" alt="Holy Places Inn logo"
+      /></picture>
     </header>
     <main class="index">
-      <div class="mainpics parent"><picture><img src="images/hero images/hero.webp" alt=""></picture><div class="child">Make a Reservation</div></div>
-      
+      <div class="mainpics parent">
+        <picture><img src="images/hero images/hero.webp" alt="" /></picture>
+        <div class="child">Make a Reservation</div>
+      </div>
+      <div class="weather">
+        <div class="column1 weathercolumn">
+          <p>Current Weather</p>
+          <figure><img id="weathericon" src="#" alt="" /></figure>
+          <figcaption></figcaption>
+          <p><span class="temperature"></span>&#176;F</p>
+        </div>
+        <div class="column2 weathercolumn">
+          <p><span class="windspeed"></span></p>
+          <p><span class="windchill"></span></p>
+          <p><span class="humidity"></span></p>
+        </div>
+      </div>
+      <div class="threeday">
+        <div>
+          <p class="tomorrow"></p>
+          <figure><img id="tomorrowweathericon" src="#" alt="" /></figure>
+          <figcaption class="tomorrowfig"></figcaption>
+          <p class="tomorrowtemp"></p>
+        </div>
+        <div>
+          <p class="overmorrow"></p>
+          <figure><img id="overmorrowweathericon" src="#" alt="" /></figure>
+          <figcaption class="overmorrowfig"></figcaption>
+          <p class="overmorrowtemp"></p>
+        </div>
+        <div>
+          <p class="doubleovermorrow"></p>
+          <figure>
+            <img id="doubleovermorrowweathericon" src="#" alt="" />
+          </figure>
+          <figcaption class="doubleovermorrowfig"></figcaption>
+          <p class="doubleovermorrowtemp"></p>
+        </div>
+      </div>
+      <div class="templespotlight">
+        <picture class="arg"
+          ><img class="argimg" src="images/gilbert_temple.webp" alt=""
+        /></picture>
+        <p class="toggleinline">
+          The Gilbert, Arizona temple was the fourth temple to be built in
+          Arizona. It was announced in the April 2008 General Conference of the
+          Church. Ground was broken in 2010, officially starting the
+          construction process. On March 2, 2014, the temple was dedicated for
+          the work of the Lord. The dedication was preceded by a cultural
+          celebration the night before, where thousands of youth gathered
+          together to celebrate the house of God.
+        </p>
+      </div>
     </main>
     <footer>
-      <picture id="footerlogo "><img src="logo/logo_small_icon_only.png" alt="Holy Places Inn logo"></picture>
-      <div>
-        Holy Places Inn<br />holyplacesinn@gmail.com<br />2236 W Karchner
-        Place<br />Baltimore, MD 21212
+      <div class="footerlayout">
+        <picture
+          ><img
+            id="footerlogo"
+            src="logo/logo_small_icon_only.png"
+            alt="Holy Places Inn logo"
+        /></picture>
+        <div>
+          Holy Places Inn<br />holyplacesinn@gmail.com<br />2236 W Karchner
+          Place<br />Baltimore, MD 21212
+        </div>
+        <p>
+          <q>
+            And he shall turn the heart of the fathers to the children, and the
+            heart of the children to their fathers
+          </q>
+          -- Malachi 4:6
+        </p>
       </div>
-      <div>
-        And he shall turn the heart of the fathers to the children, and the
-        heart of the children to their fathers
-      </div>
-      <p>&copy; <span id="copyright"></span> .:|:. Gabriele Peck .:|:. WDD 230</p>
+      <p class="info">
+        &copy; <span id="copyright"></span> .:|:. Gabriele Peck .:|:. WDD 230
+      </p>
     </footer>
   </body>
 </html>

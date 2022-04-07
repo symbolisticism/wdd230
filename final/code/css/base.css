@@ -68,6 +68,7 @@ nav ul li a {
   padding: .8rem 2vw;
   text-decoration: none;
   border-top: 1px solid rgba(0,0,0,0.5);
+  border-radius: 5px;
 }
 
 nav ul li a:link {
@@ -75,7 +76,7 @@ nav ul li a:link {
 }
 
 nav ul li a:hover {
-  background-color: rgba(0,0,0,0.7);
+  background-color: #6E7271;
   color: white;
 }
 
@@ -90,8 +91,11 @@ nav ul.open { display: block; }
 
 
 /*----------------------------------- M A I N -----------------------------------*/
-.mainpics {
-  margin: 1rem 0 0 0;
+.mainpics, 
+.weather,
+.threeday,
+.templespotlight {
+  margin: 1rem 0;
 }
 
 .parent {
@@ -113,6 +117,75 @@ main.index div div.ps {
   margin: 0 0 3rem 0;
 }
 
+div.weather {
+  background-color: #384D48;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+div.weather div.column1 > *,
+div.weather div.column2 > * {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+div.weather div.column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weathercolumn {
+  background-color: #6E7271;
+  margin: 0.75rem;
+  border-radius: 5px;
+  width: 42%;
+}
+
+div.threeday {
+  background-color: #384D48;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin: 0.5rem 0;
+}
+
+div.threeday > * {
+  padding: 0.5rem;
+  background-color: #6E7271;
+  border-radius: 10px;
+  width: 25%;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+div.templespotlight {
+  background-color: #384D48;
+  color: white;
+}
+
+div.templespotlight > * {
+  width: 50%;
+  padding: 1rem 0.5rem 0 0.5rem;
+}
+
+.arg {
+  float: left;
+}
+
+.argimg {
+  border-radius: 5px;
+}
+
+.toggleinline {
+  display: inline;
+}
 
 /*--------------------------------- F O O T E R ---------------------------------*/
 footer {
@@ -120,4 +193,23 @@ footer {
   flex-direction: column;
   flex: 1 1 auto;
   justify-content: space-around;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+footer > * {
+  padding: 0.75rem;
+}
+
+footer p.info {
+  background-color: #6E7271;
+  width: 90%;
+  padding: 0.5rem;
+  margin: 0.5rem auto 0;
+  border-radius: 5px;
+}
+
+footer #footerlogo {
+  height: 150px;
+  padding: 1rem;
 }
