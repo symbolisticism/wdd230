@@ -68,7 +68,6 @@ nav ul li a {
   padding: .8rem 2vw;
   text-decoration: none;
   border-top: 1px solid rgba(0,0,0,0.5);
-  border-radius: 5px;
 }
 
 nav ul li a:link {
@@ -88,6 +87,14 @@ nav ul.open { display: block; }
 
 #hamburgerBtn.open span:nth-child(1) { display: none; }
 #hamburgerBtn.open span:nth-child(2) { display: block; }
+
+.homewayfind, 
+.templeswayfind,
+.serviceswayfind,
+.reservationswayfind,
+.contactwayfind {
+  background-color: #6E7271;
+}
 
 
 /*----------------------------------- M A I N -----------------------------------*/
@@ -212,4 +219,88 @@ footer p.info {
 footer #footerlogo {
   height: 150px;
   padding: 1rem;
+}
+
+
+/*------------------------------------- R E S E R V A T I O N S -------------------------------------*/
+form * {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.2rem;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid grey;
+    padding: 0.5rem 2%;
+
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #502419;
+    font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #555;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem 2%;
+    font-size: 1.5rem;
+}
+
+form input.submit {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 0;
+    width: 96%;
+    max-width: 20rem;
+    text-align: center;
+}
+
+form label.top input:required {
+    border: 2px solid red;
+}
+
+form label.top input:required:valid {
+    border: 2px solid green;
+}
+
+main.reservations h1.reservationsheader {
+  margin: 1rem;
+}
+
+/*----------------------------------------- T H A N K S -----------------------------------------*/
+main.thanks p {
+  font-size: 3rem;
+  text-align: center;
+}
+
+main.thanks {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -8,6 +8,12 @@
       name="description"
       content="Website for members of the LDS Church to coordinate visits to the temple."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
@@ -24,7 +30,7 @@
         <ul id="primaryNav">
           <li><a href="index.html">Home</a></li>
           <li><a href="temples.html">Temples</a></li>
-          <li><a href="reservations.html">Reservations</a></li>
+          <li><a class="reservationswayfind" href="reservations.html">Reservations</a></li>
           <li><a href="services.html">Services</a></li>
         </ul>
       </nav>
@@ -32,7 +38,95 @@
         ><img src="logo/logo_small_icon_only.png" alt="Holy Places Inn logo"
       /></picture>
     </header>
+    <main class="reservations">
+      <h1 class="reservationsheader">Make a Reservation</h1>
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label class="top"
+            >First Name* <input type="text" name="fname" required
+          /></label>
+          <label class="top"
+            >Last Name* <input type="text" name="lname" required
+          /></label>
+          <label class="top"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="somebody@email.com"
+              required
+          /></label>
+          <label class="top"
+            >Phone*
+            <input type="tel" name="phone" placeholder="1235559876" required
+          /></label>
+        </fieldset>
 
+        <fieldset class="membership">
+          <legend>Reservation Options</legend>
+          <label class="sbs"
+            ><input type="radio" name="packages" value="telestial" /> Telestial
+            Package <span class="cost">$80/night</span></label
+          >
+          <p class="memlevels">
+            Our basic package is a nice 800 square foot room with a queen size
+            bed, tub and shower, and all the appliances you would need to
+            prepare for your temple visit (ironing board, steamer, shoe shine,
+            etc.). Breakfast is included.
+          </p>
+          <label class="sbs bronze"
+            ><input type="radio" name="packages" value="terrestrial" />
+            Terrestrial Package <span class="cost">$110/night</span></label
+          >
+          <p class="memlevels">
+            The Terrestrial Package is a wonderful addition to the Telestial
+            Package. With all of our basic commodities and comforts, this one
+            also comes with access to a pool and sauna, the on-site gym, and
+            lunch is added on to your stay.
+          </p>
+          <label class="sbs silver"
+            ><input type="radio" name="packages" value="celestial" /> Celestial
+            Package <span class="cost">$130/night</span></label
+          >
+          <p class="memlevels">
+            Our Celestial Package is for those looking to make their trip to the
+            temple more of a vacation. Along with everything else offered in
+            packages below, this package comes with a corner suite, a king sized
+            bed, a 70-inch OLED television, and dinner and dessert included.
+          </p>
+          <label class="sbs gold"
+            ><input type="radio" name="packages" value="gold" /> Calling and
+            Election Made Sure <span class="cost">$170/night</span></label
+          >
+          <p class="memlevels">
+            Our highrest package comes with all the bells and whistles. Included
+            in this package are local excursions, a hotel-provided chauffeur for
+            the entire duration of your stay available from 6 AM to 11 PM,
+            unlimited drinks at our virgin bar, and a plus one per guest to be
+            used at the gym, pool, sauna, or any other hotel facility.
+          </p>
+        </fieldset>
+        <fieldset class="reservationdates">
+          <legend>Dates</legend>
+          <label for="startDate" class="top"
+            >Start Date*
+            <input type="date" id="startDate" name="startDate" required
+          /></label>
+          <label for="endDate" class="top"
+            >End Date*
+            <input type="date" id="endDate" name="endDate" required
+          /></label>
+        </fieldset>
+        <input
+          type="submit"
+          value="Confirm My Reservation"
+          class="submit"
+          onclick="storeDate()"
+        />
+        <span class="time" hidden></span>
+      </form>
+    </main>
     <footer>
       <div class="footerlayout">
         <picture

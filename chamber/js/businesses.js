@@ -1,5 +1,5 @@
 const requestURL =
-  "https://symbolisticism.github.io/wdd230/chamber/js/data.json";
+  "https://symbolisticism.github.io/wdd230/final/code/js/.json";
 const cards = document.querySelector(".cards");
 
 fetch(requestURL)

@@ -4,27 +4,31 @@
     "country": "Germany",
     "state":"Saxony",
     "size":"13,500 sqft",
-    "name": "Freiberg Temple"
+    "name": "Freiberg Temple",
+    "src":"./images/temples/freiberg_temple.webp"
   },
   {
     "dedicated": "13 October 1996",
     "country": "United States",
     "state":"Utah",
     "size":"107,240 sqft",
-    "name": "Mount Timpanogos Temple"
+    "name": "Mount Timpanogos Temple",
+    "src":"./images/temples/mount_timpanogos_temple.webp"
   },
   {
     "dedicated": "11 March 1956",
     "country":"United States",
     "state":"California",
     "size":"190,614 sqft",
-    "name": "Los Angeles Temple"
+    "name": "Los Angeles Temple",
+    "src":"./images/temples/los_angeles_temple.webp"
   },
   {
     "dedicated": "11 September 1955",
     "country":"Switzerland",
     "state":"Bern",
     "size":"35,546 sqft",
-    "name": "Bern Temple"
+    "name": "Bern Temple",
+    "src":"./images/temples/bern_temple.webp"
   }
 ]
