@@ -40,13 +40,13 @@ function displayTemples(temple) {
 
   size.innerText = `Size: ${temple.size}`;
 
-  address.innerText = `${temple.address}`;
+  address.innerText = `Address: ${temple.address}`;
 
-  phone.innerText = `${temple.phone}`;
+  phone.innerText = `Phone: ${temple.phone}`;
 
-  email.innerText = `${temple.email}`;
+  email.innerText = `Email: ${temple.email}`;
   
-  services.innerText = `${temple.services}`;
+  services.innerText = `Services: ${temple.services}`;
   
   dedicated.innerText = `Dedicated: ${temple.dedicated}`;
 
